@@ -22,6 +22,9 @@
 
     /* Padding */
     --padding-mobile: 0 10px;
+
+    /* Margin */
+    --margin-bottom: 70px;
 }
 
 /* General configuration */
@@ -104,10 +107,12 @@ body {
     width: 250px;
     height: 570px;
     margin: auto;
+    margin-bottom: var(--margin-bottom);
 }
 
 .header .header-container .title-header {
     width: 100%;
+    z-index: 2;
 }
 
 .header .header-container .title-header .social-media-header{
@@ -138,11 +143,11 @@ body {
     height: 100%;
     position: relative;
     top: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .header .header-container .pattern-cicle {
-    background: url(assets/images/pattern-circle.svg) no-repeat bottom / cover;
+    background: url(assets/images/pattern-circle.svg) no-repeat center / cover;
     width: 130px;
     height: 130px;
     position: absolute;
@@ -152,9 +157,11 @@ body {
 }
 
 .header .header-container .pattern-rings {
-    background: url(assets/images/pattern-rings.svg) no-repeat bottom / cover;
-    width: 100px;
-    height: 100px;
+    background: url(assets/images/pattern-rings.svg) no-repeat center / cover;
+    width: 530px;
+    height: 130px;
     position: absolute;
     z-index: -1;
+    right: 150px;
+    top: 38%;
 }
