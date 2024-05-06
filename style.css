@@ -186,6 +186,10 @@ body {
     line-height: 26px;
 }
 
+#main {
+    padding: var(--padding-mobile);
+}
+
 .main .technologies {
     position: relative;
     border-top: 1px solid var(--white);
@@ -218,4 +222,83 @@ body {
     z-index: -1;
     left: 200px;
     bottom: -70px;
+}
+
+.main .projects {
+    margin: var(--margin-bottom) 0;
+}
+
+.main .projects .title-projects{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .projects .title-projects h2{
+    font-size: var(--font-size-40);
+    font-weight: var(--bold);
+    color: var(--white);
+    letter-spacing: -1.14px;
+}
+
+.main .projects .project {
+    margin-bottom: var(--margin-bottom);
+}
+
+.main .projects .project .design-portfolio {
+    background: url(assets/images/thumbnail-project-1-small.webp) no-repeat center / cover;
+    width: 100%;
+    height: 260px;    
+}
+
+.main .projects .project .e-learning-landing-page {
+    background: url(assets/images/thumbnail-project-2-small.webp) no-repeat center / cover;
+    width: 100%;
+    height: 260px;
+}
+
+.main .projects .project .todo-web-app {
+    background: url(assets/images/thumbnail-project-3-small.webp) no-repeat center / cover;
+    width: 100%;
+    height: 260px;
+}
+
+.main .projects .project .entertainment-web-app {
+    background: url(assets/images/thumbnail-project-4-small.webp) no-repeat center / cover;
+    width: 100%;
+    height: 260px;
+}
+
+.main .projects .project .memory-game {
+    background: url(assets/images/thumbnail-project-5-small.webp) no-repeat center / cover;
+    width: 100%;
+    height: 260px;
+}
+
+.main .projects .project .art-gallery-showcase {
+    background: url(assets/images/thumbnail-project-6-small.webp) no-repeat center / cover;
+    width: 100%;
+    height: 260px;
+}
+
+.main .projects .project h3 {
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.main .projects .project .technology-project{
+    display: flex;
+    gap: 20px;
+}
+.main .projects .project .technology-project span{
+    color: var(--grey);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.main .projects .project .links-project{
+    display: flex;
+    gap: 20px;
 }
