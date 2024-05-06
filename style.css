@@ -97,12 +97,22 @@ body {
 
 .header .header-container {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 250px;
     height: 570px;
     margin: auto;
+}
+
+.header .header-container .title-header {
+    width: 100%;
+}
+
+.header .header-container .title-header .social-media-header{
+    width: 100%;
+    background: linear-gradient(to top, rgba(36, 36, 36, 0.226), rgba(36, 36, 36, 0));
 }
 
 .header .header-container h3 {
@@ -127,6 +137,24 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    top: -37px;
+    top: 0;
+    z-index: -1;
+}
+
+.header .header-container .pattern-cicle {
+    background: url(assets/images/pattern-circle.svg) no-repeat bottom / cover;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    z-index: -1;
+    right: -55%;
+    bottom: 0;
+}
+
+.header .header-container .pattern-rings {
+    background: url(assets/images/pattern-rings.svg) no-repeat bottom / cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
     z-index: -1;
 }
