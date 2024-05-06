@@ -11,9 +11,12 @@
 
     /* Typography */
     --font: "Space Grotesk", sans-serif;
+    --font-size-24: 1.5em;
+    --font-size-40: 2.5em;
+
     --bold: 700;
     --medium: 500;
-    --font-size-24: 1.5em;
+
     --line-height-32: 2em;
 
     /* Transition configuration */
@@ -107,7 +110,6 @@ body {
     width: 250px;
     height: 570px;
     margin: auto;
-    margin-bottom: var(--margin-bottom);
 }
 
 .header .header-container .title-header {
@@ -164,4 +166,56 @@ body {
     z-index: -1;
     right: 150px;
     top: 38%;
+}
+
+.header .header-main {
+    width: 335px;
+    margin: var(--margin-bottom) auto;
+}
+
+.header .header-main h1 {
+    line-height: 1.3em;
+}
+
+.header .header-main .name {
+    border-bottom: 3px solid var(--green);
+}
+
+.header .header-main p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.main .technologies {
+    position: relative;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    text-align: center;
+}
+
+.main .technologies .technology {
+    margin: 35px 0;
+}
+
+.main .technologies .technology h3{
+    color: var(--white);
+    font-size: var(--line-height-32);
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.main .technologies .technology p{
+    font-size: 1em;
+    margin: 0;
+    color: var(--grey);
+}
+
+.main .technologies .pattern-rings {
+    background: url(assets/images/pattern-rings.svg) no-repeat center / cover;
+    width: 546px;
+    height: 130px;
+    position: absolute;
+    z-index: -1;
+    left: 200px;
+    bottom: -70px;
 }
