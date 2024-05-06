@@ -302,3 +302,15 @@ body {
     display: flex;
     gap: 20px;
 }
+
+#footer {
+    background-color: var(--darck-grey);
+}
+
+.footer h2 {
+    font-size: var(--font-size-40);
+    font-weight: var(--bold);
+    color: var(--white);
+    letter-spacing: -1.14px;
+    margin-bottom: 0;
+}
