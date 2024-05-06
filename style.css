@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    /* Color */
+
+    --black: rgb(21, 21, 21);
+    --darck-grey: rgb(36, 36, 36);
+    --green: rgb(78, 225, 160);
+    --grey: rgb(217, 217, 217);
+    --white: rgb(255,255,255);
+
+    /* Typography */
+    --font: "Space Grotesk", sans-serif;
+    --bold: 700;
+    --medium: 500;
+    --font-size-24: 1.5em;
+    --line-height-32: 2em;
+
+    /* Transition configuration */
+
+    --transition: all .5s ease-in-out;
+
+    /* Padding */
+    --padding-mobile: 0 10px;
+}
+
+/* General configuration */
+a {
+    text-decoration: none;
+}
+
+/* Typography */
+
+.heading-Xl {
+    font-family: var(--font);
+    font-weight: var(--bold);
+    font-size: 5.5em;
+    line-height: 5.5em;
+    letter-spacing: -2.5px;
+}
+
+.heading-l {
+    font-family: var(--font);
+    font-weight: var(--bold);
+    font-size: 3em;
+    line-height: 3.5em;
+    letter-spacing: -1.5px;
+}
+
+.heading-m {
+    font-family: var(--font);
+    font-weight: var(--bold);
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+body {
+    font-family: var(--font);
+    font-weight: var(--medium);
+    font-size: 1.125em;
+    line-height: 1.75em;
+    background-color: var(--black);
+}
+
+/* Button */
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 2.29px;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: var(--bold);
+    color: var(--white);
+    border-bottom: 2px solid var(--green);
+    transition: var(--transition);
+    padding-bottom: 10px;
+}
+
+.btn:hover {
+    color: var(--green);
+}
+
+/* ----------- */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+#header {
+    text-align: center;
+    color: var(--white);
+    padding: var(--padding-mobile);
+}
+
+.header .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 570px;
+    margin: auto;
+}
+
+.header .header-container h3 {
+    font-weight: var(--bold);
+    font-size: var(--font-size-24);
+    line-height: var(--line-height-32);
+    letter-spacing: -0.33px;
+}
+
+.header .header-container .social-media-header a i {
+    font-size: var(--font-size-24);
+    color: var(--white);
+    margin: 0 10px;
+}
+
+.header .header-container .social-media-header a i:hover {
+    color: var(--green);
+}
+
+.header .header-container .img-main {
+    background: url(assets/images/image-profile-mobile.webp) no-repeat bottom / cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -37px;
+    z-index: -1;
+}
