@@ -123,17 +123,19 @@ body {
     background: linear-gradient(to top, rgba(36, 36, 36, 0.226), rgba(36, 36, 36, 0));
 }
 
-.header .header-container h3 {
+.header .header-container .title-header a h3  {
     font-weight: var(--bold);
     font-size: var(--font-size-24);
     line-height: var(--line-height-32);
     letter-spacing: -0.33px;
+    color: var(--white);
 }
 
 .header .header-container .social-media-header a i {
     font-size: var(--font-size-24);
     color: var(--white);
     margin: 0 10px;
+    transition: var(--transition);
 }
 
 .header .header-container .social-media-header a i:hover {
@@ -329,21 +331,104 @@ body {
     text-align: center;
 }
 
-.footer .form-control input,
-.footer .form-control textarea{
+.footer .form {
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 45px;
+    z-index: 999;
+}
+
+.footer .form .form-control {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer .form .form-control .input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.footer .form .form-control input,
+.footer .form .form-control textarea{
     border: none;
     background: transparent;
     border-bottom: 1px solid var(--grey);
+    outline: none;
+    font-size: .9em;
     padding: 25px;
+    color: var(--white);
+    text-transform: uppercase;    
+
 
     &::placeholder {
-        color: var(--grey);
+        font-family: var(--font);
+        color: rgba(217, 217, 217, 0.479);
         text-transform: uppercase;
-        font-size: .9em;
         letter-spacing: 1px;
         font-weight: 500;
+        padding: 0 5px;
     }
+
+    &:focus,
+    &:valid {
+        border-bottom: 1px solid var(--green);
+    }
+}
+
+.footer .form .form-control .input i {
+    position: absolute;
+    right: 5px;
+    top: 25px;
+    font-size: 1.3em;
+    color: #ff6f5b;
+    visibility: hidden;
+}
+
+.footer .form .form-control .input small {
+    font-size: .7em;
+    color: #ff6f5b;
+    text-align: right;
+    letter-spacing: 1px;
+    font-weight: 400;
+    visibility: hidden;
+}
+
+.footer .form .form-control .error input {
+    border-bottom: 1px solid #ff6f5b;
+}
+
+.footer .form .form-control .success input {
+    border-bottom: 1px solid var(--green);
+}
+
+.footer .form .form-control .error i,
+.footer .form .form-control .error small 
+{
+    visibility: visible;
+}
+
+.footer .pattern-rings {
+    background: url(assets/images/pattern-rings.svg) no-repeat center / cover;
+    width: 580px;
+    height: 140px;
+    position: absolute;
+    right: 180px;
+    top: 550px;
+    z-index: 0;
+}
+
+
+.footer .title-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 35px;
 }
 
 .footer .title-footer h3 {
@@ -355,9 +440,10 @@ body {
 }
 
 .footer .title-footer .social-media-header a i {
-    font-size: 20px;
+    font-size: 25px;
     color: var(--white);
     margin: 0 10px;
+    transition: var(--transition);
 }
 
 .footer .title-footer .social-media-header a i:hover {
