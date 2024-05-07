@@ -62,7 +62,8 @@ a {
 }
 
 body, 
-html {
+html,
+.container  {
     overflow-x: hidden;
 }
 
