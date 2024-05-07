@@ -24,7 +24,8 @@
     --transition: all .5s ease-in-out;
 
     /* Padding */
-    --padding-mobile: 0 10px;
+    --padding-mobile: 10px;
+    --padding-tablet: 45px
 
     /* Margin */
     --margin-bottom: 70px;
@@ -176,6 +177,10 @@ body {
     margin: var(--margin-bottom) auto;
 }
 
+.header .header-main .quebra {
+    display: none;
+}
+
 .header .header-main h1 {
     line-height: 1.3em;
 }
@@ -309,6 +314,7 @@ body {
 #footer {
     background-color: var(--darck-grey);
     padding: 40px 10px;
+    position: relative;
 }
 
 .footer h2 {
@@ -419,7 +425,7 @@ body {
     height: 140px;
     position: absolute;
     right: 180px;
-    top: 550px;
+    top: 540px;
     z-index: 0;
 }
 
@@ -448,4 +454,79 @@ body {
 
 .footer .title-footer .social-media-header a i:hover {
     color: var(--green);
+}
+
+@media screen and (min-width: 768px) {
+    #header {
+        padding: 0 45px;
+        height: 712px;
+    }
+
+    .header .header-container {
+        width: 100%;
+        height: 150px;
+        justify-content: stretch;
+    }
+
+    .header .header-container .title-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .header-container .title-header a h3 {
+        font-size: var(--line-height-32);
+    }
+
+    .header .header-container .social-media-header a i {
+        font-size: 1.6em;
+        color: var(--white);
+        transition: var(--transition);
+    }
+
+    .header .header-container .title-header .social-media-header {
+        width: auto;
+        background: transparent;
+    }
+
+    .header .header-container .img-main {
+        background: url(assets/images/image-profile-tablet.webp) no-repeat center / cover;
+        width: 60%;
+        position: absolute;
+        height: 680px;
+        top: -10px;
+        right: -55px;
+        z-index: -1;
+    }
+
+    .header .header-main {
+        width: 477px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .header .header-main h1 {
+        font-size: 60px;
+        line-height: 1.3em;
+        margin-top: 0;
+    }
+
+    .header .header-main .quebra {
+        display: inline;
+    }
+
+    .header .header-container .pattern-cicle {
+        right: -114px;
+        bottom: -522px;
+    }
+
+    .header .header-container .pattern-rings {
+        width: 615px;
+        height: 149px;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        left: -353px;
+        top: 109px;
+    }
 }
