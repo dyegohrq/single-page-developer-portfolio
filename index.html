@@ -11,6 +11,8 @@
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body>
+  <div class="pattern-rings-header"></div>
+  <div class="pattern-rings-main"></div>
 
   <div class="container">
     <header id="header" class="header">
@@ -92,7 +94,7 @@
             </div>
           </div>
           <div class="project">
-            <div class="img-project e-learning-landing-page"></div>
+            <div class="img-project e-learning-landing-page"><div class="filter"></div></div>
             <h3 class="heading-m">E-learning landing page</h3>
             <div class="technology-project">
               <span>HTML</span>
@@ -104,7 +106,7 @@
             </div>
           </div>
           <div class="project">
-            <div class="img-project todo-web-app"></div>
+            <div class="img-project todo-web-app"><div class="filter"></div></div>
             <h3 class="heading-m">Todo web app</h3>
             <div class="technology-project">
               <span>HTML</span>
@@ -117,7 +119,7 @@
             </div>
           </div>
           <div class="project">
-            <div class="img-project entertainment-web-app"></div>
+            <div class="img-project entertainment-web-app"><div class="filter"></div></div>
             <h3 class="heading-m">Entertainment web app</h3>
             <div class="technology-project">
               <span>HTML</span>
@@ -130,7 +132,7 @@
             </div>
           </div>
           <div class="project">
-            <div class="img-project memory-game"></div>
+            <div class="img-project memory-game"><div class="filter"></div></div>
             <h3 class="heading-m">Memory Game</h3>
             <div class="technology-project">
               <span>HTML</span>
@@ -143,7 +145,7 @@
             </div>
           </div>
           <div class="project">
-            <div class="img-project art-gallery-showcase"></div>
+            <div class="img-project art-gallery-showcase"><div class="filter"></div></div>
             <h3 class="heading-m">Art gallery showcase</h3>
             <div class="technology-project">
               <span>HTML</span>
@@ -158,14 +160,16 @@
         </div>
       </div>
     </main>
-    <footer id="footer" class="footer">
-      <h2>Contact</h2>
-
-      <p>
-        I would love to hear about your project and how I could help. Please
-        fill in the form, and I’ll get back to you as soon as possible.
-      </p>
-    
+  </div>
+  <footer id="footer" class="footer">
+    <div class="contact-form">
+      <div class="title-contact">
+        <h2>Contact</h2>
+        <p>
+          I would love to hear about your project and how I could help. Please
+          fill in the form, and I’ll get back to you as soon as possible.
+        </p>
+      </div>
       <form action="" class="form" id="form" novalidate>
         <div class="form-control " id="form-control">
           <div class="input input-name" id="input-name">
@@ -173,37 +177,35 @@
             <i class="fa-solid fa-circle-exclamation"></i>
             <small>Mensagem de error</small>
           </div>
-
           <div class="input input-email" id="input-email">
             <input type="email" name="email" id="email" placeholder="Email" required autocomplete="off">
             <i class="fa-solid fa-circle-exclamation"></i>
             <small>Mensagem de error</small>
           </div>
-
           <textarea name="message" id="menssage" placeholder="Message" required cols="30" rows="5"></textarea>
         </div>
         <a href="" id="btn" class="btn btn-footer">Send message</a>
       </form>
-      <div class="pattern-rings"></div>
-    
-    
-      <div class="title-footer">
+    </div>
+    <div class="pattern-rings"></div>
+  
+  
+    <div class="title-footer">
+      <a href="">
+        <h3>adamkeyes</h3>
+      </a>
+      <div class="social-media-header">
+        <a href=""><i class="fa-brands fa-github"></i></a>
         <a href="">
-          <h3>adamkeyes</h3>
+          <i class="front-end-mentor">
+            <img src="assets/images/icon-frontend-mentor.svg" alt="">
+          </i>
         </a>
-        <div class="social-media-header">
-          <a href=""><i class="fa-brands fa-github"></i></a>
-          <a href="">
-            <i class="front-end-mentor">
-              <img src="assets/images/icon-frontend-mentor.svg" alt="">
-            </i>
-          </a>
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-        </div>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/24690ddc1f.js" crossorigin="anonymous"></script>

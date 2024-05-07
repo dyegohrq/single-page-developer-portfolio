@@ -96,8 +96,8 @@ body {
 /* ----------- */
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1400px;
+    margin: 0px auto;
 }
 
 /* Header */
@@ -263,37 +263,43 @@ body {
 .main .projects .project-grid .project .design-portfolio {
     background: url(assets/images/thumbnail-project-1-small.webp) no-repeat center / cover;
     width: 100%;
-    height: 260px;    
+    height: 260px;
+    position: relative;   
 }
 
 .main .projects .project-grid .project .e-learning-landing-page {
     background: url(assets/images/thumbnail-project-2-small.webp) no-repeat center / cover;
     width: 100%;
     height: 260px;
+    position: relative;
 }
 
 .main .projects .project-grid .project .todo-web-app {
     background: url(assets/images/thumbnail-project-3-small.webp) no-repeat center / cover;
     width: 100%;
     height: 260px;
+    position: relative;
 }
 
 .main .projects .project-grid .project .entertainment-web-app {
     background: url(assets/images/thumbnail-project-4-small.webp) no-repeat center / cover;
     width: 100%;
     height: 260px;
+    position: relative;
 }
 
 .main .projects .project-grid .project .memory-game {
     background: url(assets/images/thumbnail-project-5-small.webp) no-repeat center / cover;
     width: 100%;
     height: 260px;
+    position: relative;
 }
 
 .main .projects .project-grid .project .art-gallery-showcase {
     background: url(assets/images/thumbnail-project-6-small.webp) no-repeat center / cover;
     width: 100%;
     height: 260px;
+    position: relative;
 }
 
 .main .projects .project-grid .project h3 {
@@ -559,8 +565,10 @@ body {
     }
 
     .main .technologies .pattern-rings {
-        left: 523px;
+        left: 84%;
         bottom: -21px;
+        width: 546px;
+        height: 133px;
     }
 
     .main .projects {
@@ -612,5 +620,155 @@ body {
         flex-direction: row;
         padding: 0 35px;
         border-top: 1px solid var(--grey);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .btn {
+        width: 160px;
+        text-align: center;
+        display: block;
+    }
+    .container {
+        padding: 0 55px;
+    }
+
+    #header {
+        height: 715px;
+    }
+
+    .header .header-container .img-main {
+        background: url(assets/images/image-profile-desktop.webp) no-repeat center / cover;
+        width: 40%;
+        position: absolute;
+        height: 680px;
+        top: 0px;
+        right: 0;
+    }
+
+    .header .header-container .pattern-cicle {
+        right: 34%;
+        bottom: -458px;
+    }
+
+    .header .header-container .pattern-rings {
+        z-index: 0;
+        right: 0;
+        left: -258px;
+        top: 115px;
+    }
+
+    .header .header-main {
+        width: 720px;
+    }
+
+    .header .header-main h1 {
+        font-family: var(--font);
+        font-weight: var(--bold);
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -2.5px;
+    }
+
+    .header .header-main p {
+        margin-bottom: 50px;
+    }
+
+    .header .header-main .quebra {
+        display: none;
+    }
+
+    .main .technologies {
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 40px;
+    }
+
+    .main .projects .project-grid .project {
+        position: relative;
+    }
+
+    .main .projects .project-grid .project .links-project {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+        background: #000000a6;
+        width: 100%;
+        height: 69%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        opacity: 0;
+        transition: var(--transition);
+        cursor: pointer;
+    }
+
+    .main .projects .project-grid .project .links-project:hover {
+        opacity: 1;
+    }
+
+    .main .projects .project-grid .project .links-project .btn {
+        margin: 8px auto;
+    }
+
+    #footer {
+        padding: 40px 75px 0 75px;
+    }
+
+    .footer .contact-form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer h2 {
+        margin-bottom: 55px;
+    }
+
+    .footer h2, .footer p {
+        text-align: left;
+    }
+
+    .footer .pattern-rings {
+        right: 0;
+        left: -367px;
+        top: 367px;
+        width: 654px;
+        height: 159px;
+    }
+
+    .footer .form {
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    .pattern-rings-header {
+        background: url(assets/images/pattern-rings.svg) no-repeat center / cover;
+        width: 533px;
+        height: 130px;
+        position: absolute;
+        z-index: -1;
+        top: 15%;
+        left: -10%;
+    }
+
+    .pattern-rings-main {
+        background: url(assets/images/pattern-rings.svg) no-repeat center / cover;
+        width: 547px;
+        height: 133px;
+        position: absolute;
+        z-index: -1;
+        top: 112%;
+        right: -15%;
+    }
+
+    .header .header-container .pattern-rings {
+        display: none;
+    }
+
+    .main .technologies .pattern-rings {
+        display: none;
     }
 }
