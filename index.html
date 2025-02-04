@@ -1,93 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- style -->
-  <link rel="stylesheet" href="assets/style/index.css">
-  
-  <title>Frontend Mentor | Single-page developer portfolio</title>
-</head>
-<body>
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <header id="header">
+    <!-- style -->
+    <link rel="stylesheet" href="assets/style/index.css" />
 
-    <nav>
-      <div class="logo"><a href="index.html">adamkeyes</a></div>
-      <div class="social-media">
-        <ul class="list">
-          <li class="list-item">
-            <a href="#" class="link-item"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="link-item"><i class="frontend-mentor"><img src="assets/images/icon-frontend-mentor.svg" alt="Logo frontend-mentor"></i></a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="link-item"><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="link-item"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-        </ul>
+    <title>Frontend Mentor | Single-page developer portfolio</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <div class="logo"><a href="index.html">adamkeyes</a></div>
+        <div class="social-media">
+          <ul class="list">
+            <li class="list-item">
+              <a href="#" class="link-item"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link-item"
+                ><i class="frontend-mentor"
+                  ><img
+                    src="assets/images/icon-frontend-mentor.svg"
+                    alt="Logo frontend-mentor" /></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link-item"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link-item"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="img-profile"></div>
+      </nav>
+
+      <div class="bg-rings"></div>
+      <div class="bg-circle"></div>
+
+      <div class="container">
+        <div class="text-content">
+          <h1 class="text-present-1">
+            Nice to meet you! I'm <span>Adam Keyes</span>.
+          </h1>
+
+          <p class="text-present-4">
+            Based in the UK, I'm a front-end developer passionate about building
+            accessible web apps that users love.
+          </p>
+
+          <a href="" class="button">Contact me</a>
+        </div>
       </div>
-      <div class="img-profile"></div>
-    </nav>
+    </header>
+    <main id="main">
+      <section class="experience">
+        <div class="experience-card">
+          <h2 class="text-present-2">HTML</h2>
+          <span class="text-present-4">4 Years Experience</span>
+        </div>
+        <div class="experience-card">
+          <h2 class="text-present-2">CSS</h2>
+          <span class="text-present-4">4 Years Experience</span>
+        </div>
+        <div class="experience-card">
+          <h2 class="text-present-2">JavaScript</h2>
+          <span class="text-present-4">4 Years Experience</span>
+        </div>
+        <div class="experience-card">
+          <h2 class="text-present-2">Accessibility</h2>
+          <span class="text-present-4">4 Years Experience</span>
+        </div>
+        <div class="experience-card">
+          <h2 class="text-present-2">React</h2>
+          <span class="text-present-4">3 Years Experience</span>
+        </div>
+        <div class="experience-card">
+          <h2 class="text-present-2">Sass</h2>
+          <span class="text-present-4">3 Years Experience</span>
+        </div>
 
-    <div class="bg-rings"></div>
-    <div class="bg-circle"></div>
+        <div class="bg-rings"></div>
+      </section>
 
-    <div class="container">
-      <div class="text-content">
-        <h1 class="text-present-1">Nice to meet you! I'm <span>Adam Keyes</span>.</h1>
+      <section class="project">
 
-        <p class="text-present-4">
-          Based in the UK, I'm a front-end developer passionate about
-          building accessible web apps that users love.
-        </p>
-      
-        <a href="" class="button">Contact me</a>
-      </div>
-    </div>
-  </header>
+        <div class="title-project">
+          <h1 class="text-present-1">Projects</h1>
+          <a href="" class="button">Contact me</a>
+        </div>
 
-  <!-- 
+        <div class="project-card">
+          <div class="card design-portfolio">
+            <div class="img-card"></div>
+            <div class="description-card">
+              <h3 class="text-present-3">Design portfolio</h3>
+              <div class="technology">
+                <span>HTML</span> 
+                <span>CSS</span>
+              </div>
+              <div class="buttons">
+                <a href="" class="button">View project </a>
+                <a href="" class="button">View code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+    <!-- 
 
   
 
-  HTML
-  4 Years Experience
+  
 
-  CSS
-  4 Years Experience
-
-  JavaScript
-  4 Years Experience
-
-  Accessibility
-  4 Years Experience
-
-  React
-  3 Years Experience
-
-  Sass
-  3 Years Experience
-
-  Projects
-
-  Contact me
-
-  Design portfolio
-  HTML CSS
-  View project
-  View code
+  
 
   E-learning landing page
   HTML CSS
@@ -127,7 +179,10 @@
 
   adamkeyes -->
 
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/24690ddc1f.js" crossorigin="anonymous"></script>
-</body>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/24690ddc1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
