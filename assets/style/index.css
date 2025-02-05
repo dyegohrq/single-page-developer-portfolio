@@ -23,10 +23,10 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: var(--dark);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +215,7 @@ img {
 
 @media screen and (min-width: 1200px) {
     #header{
-        max-width: 1110px;
+        max-width: 1200px;
     }
 
     /* Nav */
@@ -237,12 +237,12 @@ img {
 }
 
 #header .bg-circle {
-    width: 129px;
+    width: 64.5px;
     height: 129px;
-    background: url(../images/pattern-circle.svg) no-repeat center / cover;
+    background: url(../images/pattern-circle.svg) no-repeat left / cover;
     position: absolute;
-    bottom: 249px;
-    right: -64.5px;
+    top: 231px;
+    right: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -252,7 +252,7 @@ img {
     }
 
     #header .bg-circle {
-        bottom: 67px;
+        top: 471px;
     }
 }
 
@@ -262,8 +262,9 @@ img {
     }
 
     #header .bg-circle {
+        width: 129px;
         right: 380px;
-        bottom: 125px;
+        top: 519px;
     }
 }
 
@@ -322,8 +323,9 @@ img {
 /* Main */
 
 #main {
-    width: 90%;
-    /* padding: 0 var(--padding-mobile); */
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 var(--padding-mobile);
 }
 
 /* Section - experience */
@@ -349,16 +351,20 @@ img {
     color: var(--gray);
 }
 
-#main .experience .bg-rings {
-    background: url(../images/pattern-rings.svg) no-repeat center / cover;
-    width: 530px;
+.bg-rings-bottom  {
+    background: url(../images/pattern-rings.svg) no-repeat left / cover;
+    width: 240px;
     height: 129px;
     position: absolute;
-    bottom: -65px;
-    right: -300px;
+    bottom: -440px;
+    right: 0;
 }
 
 @media screen and (min-width: 768px) {
+    #main {
+        padding: 0 var(--padding-tablet);
+    }
+
     #main .experience {
         grid-template-columns: repeat(2, 1fr);
         gap: 52px;
@@ -368,11 +374,10 @@ img {
     #main .experience .experience-card {
         text-align: left;
     }
-}
 
-@media screen and (min-width: 1000px) {
-    #main .experience .bg-rings {
-        bottom: -8px;
+    .bg-rings-bottom {
+        width: 196px;
+        bottom: -184px;
     }
 }
 
@@ -382,6 +387,10 @@ img {
         gap: 58px;
         border-bottom: 0;
     }
+
+    .bg-rings-bottom {
+        bottom: -125px;
+    }
 }
 
 /* section - projects */
@@ -389,6 +398,8 @@ img {
     width: 100%;
     margin: 80px 0;
 }
+
+
 
 #main .project .title-project {
     display: flex;
@@ -401,8 +412,140 @@ img {
     color: var(--white);
 }
 
-#main .project .project-card .design-portfolio .img-card {
+#main .project .project-card {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1 1fr;
+    gap: 40px;
+}
+
+#main .project .project-card .card {
+    width: 100%;
+    max-width: 451px;
+}
+
+#main .project .project-card .card .description-card h3 {
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 20px 0 7px 0;
+}
+
+#main .project .project-card .card .description-card .technology{
+    color: var(--gray);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 18px;
+}
+
+#main .project .project-card .card .description-card .buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    #main .project .project-card {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+
+    #main .project .project-card .card {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main .project .project-card .card{
+        position: relative;
+    }
+
+    #main .project .project-card .card .description-card .buttons {
+        position: absolute;
+        top: 0;
+        background-color: #242424;
+        width: 100%;
+        height: 410px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+    }
+
+    #main .project .project-card .card .description-card .buttons:hover {
+        opacity: .9;
+    }
+}
+
+#main .project .project-card .card .img-card {
     width: 100%;
     height: 253px;
+}
+
+#main .project .project-card .design-portfolio .img-card {
     background: url(../images/thumbnail-project-1-small.webp) no-repeat center / cover;
+}
+
+#main .project .project-card .e-learning .img-card {
+    background: url(../images/thumbnail-project-2-small.webp) no-repeat center / cover;
+}
+
+#main .project .project-card .todo .img-card {
+    background: url(../images/thumbnail-project-3-small.webp) no-repeat center / cover;
+}
+
+#main .project .project-card .entertainment .img-card {
+    background: url(../images/thumbnail-project-4-small.webp) no-repeat center / cover;
+}
+
+#main .project .project-card .memory-game .img-card {
+    background: url(../images/thumbnail-project-5-small.webp) no-repeat center / cover;
+}
+
+#main .project .project-card .art .img-card {
+    background: url(../images/thumbnail-project-6-small.webp) no-repeat center / cover;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #main .project .project-card .card .img-card {
+        width: 100%;
+        height: 313px;
+    }
+
+    #main .project .project-card .design-portfolio .img-card {
+        background: url(../images/thumbnail-project-1-large.webp) no-repeat center / cover;
+    }
+    
+    #main .project .project-card .e-learning .img-card {
+        background: url(../images/thumbnail-project-2-large.webp) no-repeat center / cover;
+    }
+    
+    #main .project .project-card .todo .img-card {
+        background: url(../images/thumbnail-project-3-large.webp) no-repeat center / cover;
+    }
+    
+    #main .project .project-card .entertainment .img-card {
+        background: url(../images/thumbnail-project-4-large.webp) no-repeat center / cover;
+    }
+    
+    #main .project .project-card .memory-game .img-card {
+        background: url(../images/thumbnail-project-5-large.webp) no-repeat center / cover;
+    }
+    
+    #main .project .project-card .art .img-card {
+        background: url(../images/thumbnail-project-6-large.webp) no-repeat center / cover;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main .project .project-card .card .img-card {
+        width: 100%;
+        height: 410px;
+    }
 }
